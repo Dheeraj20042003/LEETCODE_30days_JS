@@ -1,0 +1,18 @@
+var createCounter = function(init) {
+
+    var curr = init;
+    function increment(){
+       return  ++init;
+    }
+    function decrement() {
+        return --init;
+    }
+
+     function reset()
+    {
+        init = curr;
+        return init;
+    }
+
+    return {increment,decrement,reset};
+};
